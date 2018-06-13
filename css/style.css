@@ -1,0 +1,28 @@
+.mySlides{
+    width: 100%;
+    height: 100%;
+}
+
+/* Full screen image for background */
+body, html {
+    height: 100%;
+}
+
+.fs-img { 
+    /* The image used */
+    background-image: url("/img/title.JPG");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    bottom: 0;
+}
+
+.w3-container{
+    padding: 2% 7%;
+}
