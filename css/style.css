@@ -24,7 +24,7 @@
 
 /* Font */
 
-h1{
+h1, p, h2, h3, h4{
     font-family: 'Inconsolata', monospace;
     /* font-family: 'Noto Serif', serif; */
 }
