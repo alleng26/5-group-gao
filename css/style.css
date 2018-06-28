@@ -1,28 +1,131 @@
-.mySlides{
-    width: 100%;
-    height: 100%;
+/* Color Themes */
+.w3-theme-l5 {color:#000 !important; background-color:#e9f4fe !important}
+.w3-theme-l4 {color:#000 !important; background-color:#b5d9fd !important}
+.w3-theme-l3 {color:#000 !important; background-color:#6cb4fb !important}
+.w3-theme-l2 {color:#fff !important; background-color:#228ef9 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#0568cb !important}
+.w3-theme-d1 {color:#fff !important; background-color:#033c74 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#033567 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#022e5a !important}
+.w3-theme-d4 {color:#fff !important; background-color:#02284e !important}
+.w3-theme-d5 {color:#fff !important; background-color:#022141 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#e9f4fe !important}
+.w3-theme-dark {color:#fff !important; background-color:#022141 !important}
+.w3-theme-action {color:#fff !important; background-color:#022141 !important}
+
+.w3-theme {color:#fff !important; background-color:#034282 !important}
+.w3-text-theme {color:#034282 !important}
+.w3-border-theme {border-color:#034282 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#034282 !important}
+.w3-hover-text-theme:hover {color:#034282 !important}
+.w3-hover-border-theme:hover {border-color:#034282 !important}
+
+/* Font */
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Noto Serif', serif; */
 }
 
-/* Full screen image for background */
-body, html {
-    height: 100%;
+body{
+    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Noto Serif', serif; */
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
-.fs-img { 
-    /* The image used */
-    background-image: url("/img/title.JPG");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    bottom: 0;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
 
-.w3-container{
-    padding: 2% 7%;
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0568cb;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #228ef9;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #d9ecfe;
+    color: black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border: 1px solid blue;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.mdlBtn{
+    border-radius: .5pc;
+    font-size: 20px;
+    background-color: #0568cb;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 2px 6px 5px 0 rgba(0,0,0,0.2);
+    /* box-shadow: Horizontal Vertical Blur Spread Color(red,green,blue,opacity) */
+    transition: 0.02s;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 4px 12px 10px 0 rgba(0,0,0,0.2);
 }

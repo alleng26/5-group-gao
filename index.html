@@ -3,68 +3,252 @@
 <html lang="en"> 
 
     <!-- metadata -->
-    
+
     <head>
-    
+
         <!-- declare character encoding-->
         <meta charset="utf-8">
-        
+
         <!-- Set viewport so it can be viewed on mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!-- title tag, important for marketing -->
         <title>Technology</title>
-        
+
         <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/w3-style-reference.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css"href="css/w3-style-reference.css">
+        <link rel="stylesheet" type="text/css" href="css/video.css">
+
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Bad+Script|Cormorant+Garamond|Courgette|Montserrat+Alternates|Raleway" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Serif" rel="stylesheet">
+
         <!-- Website description -->
         <meta name="description" content="How technology has not only changed the way we live, but the way we interact with one another">
-        
+
     </head>
-    
+
     <!-- content goes in the body tag -->
-    <body class="w3-black">
-        
-        <section id="slide-1" class="mySlides fs-img">
+    <body class="w3-black" style="color: white">
 
-            <div class="w3-container">
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme-d2">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#Defining" class="w3-bar-item w3-button w3-hide-small">Defining the Topic</a>
+                <a href="#Professional" class="w3-bar-item w3-button w3-hide-small">Professional Research</a>
+                <a href="#Local" class="w3-bar-item w3-button w3-hide-small">Local Studies</a>
+                <a href="#Conclusion" class="w3-bar-item w3-button w3-hide-small">Conclusion</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#Defining" class="w3-bar-item w3-button">Defining the Topic</a>
+                <a href="#Professional" class="w3-bar-item w3-button">Professional Research</a>
+                <a href="#Local" class="w3-bar-item w3-button">Local Studies</a>
+                <a href="#Conclusion" class="w3-bar-item w3-button">Conclusion</a>
+            </div>
+        </div>
 
-                <div class="w3-display-middle">
+        <div id="home" style="z-index: 10; background-color: black; width: 100%; padding-top: 2%">
+            <h1 class="w3-center" style="padding-top: 3%">Technology Today <i class="fa fa-laptop" style="color: #0568cb"></i></h1>
 
-                    <h1 style="font-size: 42px; text-align: center">The Effect of Technology on Social Habits of Humans</h1>
+            <h2 id="Defining" class="w3-center" style="padding-top: 3%">Background</h2>
+            <!-- Tab links -->
+            <div class="tab w3-theme">
+                <button class="tablinks" onclick="openCity(event, 'Question')">The Question</button>
+                <button class="tablinks" onclick="openCity(event, 'London')">What does it mean to be social?</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">What is social media?</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Our Approach to the Question</button>
+            </div>
+
+            <!-- Tab content -->
+
+            <div id="Question" class="tabcontent">
+                <h3>In Our Fast-Paced World...</h3>
+                <p>Does technology today, especially social media make teens more or less social?</p>
+            </div>
+
+            <div id="London" class="tabcontent">
+                <h3>Social</h3>
+                <h4><i>\ ˈsō-shəl \ (adj.)</i></h4>
+                <p>The natural instinct to interact with others for personal or communal gain</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Social Media</h3>
+                <h4><i>\ ˈsō-shəl   ˈmē-dē-ə \ (n.)</i></h4>
+                <p>Websites and applications that enable users to create and share content or to participate in social networking</p>
+
+                <p style="padding-top: 10px">A definition given by an Andover High School student says that social media is any online platform that connects people over an internet server.
+                </p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>How do we find out the changes in our behavior as they are happening?</h3>
+                <p>In order to answer this complex question, we looked at the research of professionals, such as anthropologists and official university studies.</p>
+                <p>We also thought that to truly get to know the topic, we would have to get first hand accounts, so we talked to teens about their experience with social media.</p>
+            </div>
+
+            <section id="Professional" style="padding-top: 3%">
+
+                <h2 class="w3-center">Professional Research and Studies <i class="fa fa-search" style="color: #0568cb"></i></h2>
+
+                <div class="w3-row">
+                    <div style="padding: 2%; float: left">
+
+                        <img src="img/teenTech.jpg" alt="Teens and technology" width="400px" height="auto">
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="w3-center">A Change in Day to Day Interactions</h4>
+
+                        <p>According to anthropologist Josh Bell, the lack of face-to-face interaction is depersonalizing the way we communicate with one another.
+                            Through the screen, there is an absence of vulnerability that would be there in a face-to-face interaction and has changed human sociology
+                        </p>
+                        <p>Dr. Ira Hyman, a professor of psychology at Western Washington Universtiy, says that hones don’t necessarily make people more or less social. Something that most people are taking notice of is how they change the way that we interact with each other. They make people talk differently and act differently based off of what they do on their phone.</p>
+
+                        <p>Dr. Hyman also finds that when people are out with their friends they tend to check social media. A study found that 74% of females check their phones at least 10 times when they’re out with friends, comparing to males at 54%.</p>
+
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div style="width: 100%; z-index: 10; background-color: black; padding-bottom: 2%">
 
-        </section>
-        
-        <section id="slide-2" class="mySlides fs-img2">
+                    <div class="w3-center" style="padding-left: 10%; padding-right: 10%">
+                        <h4 class="w3-center">Wrong Place, Wrong Time</h4>
 
-            <div class="w3-container">
+                        <p>In a Kent State Study, researchers found that females used texting and calling to feel emotionally close to their friends and family, whereas for many males, the use of technology did not relate to emotionally connecting to people.</p>
 
-                <div>
+                        <p>The study concluded that the use of phones at inappropriate times out of habit had a negative effect on the emotional closeness with peers and parents</p>
 
-                    <h1>Defining What it Means to be Social</h1>
+                    </div>
+
 
                 </div>
 
+            </section>
+
+        </div>
+
+        <section>
+
+            <div class="w3-row">    
+                <div class="video-container w3-row">
+                    <video autoplay poster="" class="video-parallax" loop muted width="100%">
+                        <source src="img/techVid.mp4" type="video/webm">
+                        <source src="img/techVid.mp4" type="video/mp4">
+                    </video>
+                </div>  
             </div>
 
         </section>
-        
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-    
+
+        <section id="Local">
+
+            <div style="z-index: 10; background-color: black; width: 100%; padding-top: 2%">
+
+                <h2 class="w3-center">Teen Perspectives <i class="fa fa-child" style="color: #0568cb"></i></h2>
+
+                <div class="w3-row">
+
+                    <div class="w3-padding-small" style="width: 50%; float: left">
+
+                        <p>Interviewing local high school students, we found that phones have become a larger part of day to day life, although not taking it over for most. Students also say that face to face interaction has not been changed since the beginnings of social media.</p>
+
+                        <p>Students tend to find both positives and negatives with the growing use of technology and social media. It is a great way to stay connected to friends and family, especially if they live far away. It is a great way to stay up to date with the news, and the convenience of technology nowadays has made obtaining information and staying connected much easier.</p>
+
+                        <p>Technology does not only bring benefit to teens, but it can bring cyberbullying, rumors, and confrontation. It can also take up too much time outside of school, and extracurricular activities. Also, sometimes it may feel like talking to someone through a screen can replace face to face conversation.</p>
+                        
+                        <div class="w3-center">
+                <!-- Trigger/Open the Modal -->
+                <button onclick="document.getElementById('id02').style.display='block'"
+                        class="mdlBtn button card">Social Media Use</button>
+
+            </div>
+
+            <!-- The Modal -->
+            <div id="id02" class="w3-modal">
+                <div class="w3-modal-content" style="border-radius: 1.5pc">
+                    <div class="w3-container" style="padding: 2%">
+                        <span onclick="document.getElementById('id02').style.display='none'" 
+                              class="close">&times;</span>
+                        
+                        <img src="img/graph.JPG" alt="Graph" width="100%">
+
+                    </div>
+                </div>
+            </div>
+
+
+                    </div>
+
+                    <div style="width: 50%; float: right">
+
+                        <img src="img/teens.jpg" alt="Social media apps" width="600px" height="auto">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="w3-row" style="z-index: 10; background-color: black; width: 100%; padding-top: 2%; margin-bottom: 0">    
+            <img src="img/media.jpg" width="100%">
+        </div>
+
+        <section id="Conclusion">
+        <div class="w3-padding-small" style="z-index: 10; background-color: black; width: 100%; padding-top: 2%">
+
+            <h2 class="w3-center">Conclusion</h2>
+
+            <p>Based off of our research we found that, as much as cell phones can help us in our daily lives, they do end up ruining real conversations, and relationships. Some people spend more time on their phone than actually talking to someone, or trying to get to know someone. When someone takes out their phone during a conversation the conversation just starts to deteriorate until there is nothing left.</p>
+            
+            <p>With all the new technology and forms of cummunication, our idea of being social is definitely changing, which is not necessarily a bad thing, but we think that our traditional idea of interaction and communication is important to us as humans.</p>
+
+            <div class="w3-center">
+                <!-- Trigger/Open the Modal -->
+                <button onclick="document.getElementById('id01').style.display='block'"
+                        class="mdlBtn button card">Bibliography</button>
+
+            </div>
+
+            <!-- The Modal -->
+            <div id="id01" class="w3-modal" style="color: black">
+                <div class="w3-modal-content" style="border-radius: 1.5pc">
+                    <div class="w3-container" style="padding: 2%">
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                              class="close">&times;</span>
+                        
+                        <div class="w3-container">
+                        <h3 class="w3-middle">Works Cited</h3>
+                        
+                        <p style="text-align: left">“Can Cell Phones Make You Feel Less Connected to Your Friends And.” Kent State University, www.kent.edu/kent/news/can-cell-phones-make-you-feel-less-connected-your-friends-and-family.</p>
+                        <p style="text-align: left">“Cell Phones Are Changing Social Interaction.” Psychology Today, Sussex Publishers, www.psychologytoday.com/us/blog/mental-mishaps/201401/cell-phones-are-changing-social-interaction</p>
+                        <p style="text-align: left">Saiidi, Uptin. “How Social Media Is Making Us Less Social: Study.” CNBC, CNBC, 19 Oct. 2015, www.cnbc.com/2015/10/15/social-media-making-millennials-less-social-study.html.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+        </section>
+
         <script src="js/slideshow.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/topnav.js"></script>
+
     </body>
 
 </html>
